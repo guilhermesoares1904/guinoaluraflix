@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guiminamflix: Assista aos melhores vídeos e trailers relacionados ao futebol.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Guiminamflix</title>
+    <style>
+        body {
+            color: white;
+            background: #0056A0; /* Azul escuro, cor de fundo que remete a clubes de futebol */
+            margin: 0;
+            font-family: "Chakra Petch", sans-serif;
+            padding: 20px;
+            background-image: url('https://www.example.com/football-field-background.jpg'); /* Exemplo de imagem de fundo de campo de futebol */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            border-bottom: 2px solid #FFCC00; /* Amarelo, cor comumente associada ao futebol */
+            padding: 20px;
+            font-size: 32px;
+            color: #FFCC00; /* Amarelo para combinar com a borda */
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhorar a legibilidade */
+        }
+
+        .chamada {
+            background: rgba(0, 0, 0, 0.7); /* Escuro para destacar o conteúdo sobre o fundo do campo de futebol */
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .chamada-texto {
+            margin-right: 20px;
+            color: #FFCC00; /* Amarelo para texto */
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .video-container {
+            flex-shrink: 0;
+        }
+
+        .categoria {
+            padding: 20px;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.6); /* Fundo escuro para as categorias */
+            border-radius: 10px;
+        }
+
+        .categoria h2 {
+            color: #FFCC00; /* Amarelo para combinar com o tema de futebol */
+            text-align: center;
+        }
+
+        .categoria-videos {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .categoria-videos a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .categoria-videos img {
+            opacity: 0.8;
+            height: 200px;
+            border-radius: 5px; /* Bordas arredondadas nas miniaturas */
+            transition: opacity 0.3s, border 0.3s;
+            border: 3px solid transparent; /* Borda padrão transparente */
+        }
+
+        .categoria-videos img:hover {
+            opacity: 1.0;
+            border: 3px solid #FFCC00; /* Amarelo para destacar a imagem ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <header>GUIMINAMFLIX</header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>OS DESTAQUE DO FUTEBOL</h1>
+            <p>#futebolOSMELHORES</p>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VApyFoWBEy4?si=uIi73YpxISxXkv7T" title="Vídeo sobre Futebol 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>MELHORES MOMENTOS DO FUTEBOL</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=VApyFoWBEy4" aria-label="Vídeo sobre Futebol 1">
+                <img src="https://img.youtube.com/vi/VApyFoWBEy4/maxresdefault.jpg" alt="Thumbnail do vídeo sobre Futebol 1" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=Yfp4R-0wyf4" aria-label="Vídeo sobre Futebol 2">
+                <img src="https://img.youtube.com/vi/Yfp4R-0wyf4/maxresdefault.jpg" alt="Thumbnail do vídeo sobre Futebol 2" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=2bYOtFnFi7g" aria-label="Vídeo sobre Futebol 3">
+                <img src="https://img.youtube.com/vi/2bYOtFnFi7g/maxresdefault.jpg" alt="Thumbnail do vídeo sobre Futebol 3" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=bgmPEDaTtZg" aria-label="Vídeo sobre Futebol 4">
+                <img src="https://img.youtube.com/vi/bgmPEDaTtZg/maxresdefault.jpg" alt="Thumbnail do vídeo sobre Futebol 4" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=HOXCdjE5U8c" aria-label="Vídeo sobre Futebol 5">
+                <img src="https://img.youtube.com/vi/HOXCdjE5U8c/maxresdefault.jpg" alt="Thumbnail do vídeo sobre Futebol 5" />
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
